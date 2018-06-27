@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="80dp"
+
+    >
+    <LinearLayout android:id="@+id/thumbnail"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@android:color/white"
+        android:elevation="1dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:layout_marginBottom="5dp"
+        >
+        <TextView
+            android:id="@+id/list_image"
+            android:text="OS"
+            android:textStyle="bold"
+            android:textSize="30dp"
+            android:textColor="@android:color/white"
+            android:textAlignment="center"
+            android:gravity="center_vertical"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="10dp"
+
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:background="@color/colorPrimary"
+            android:focusable="false"
+            android:clickable="false"
+
+            />
+
+
+
+
+        <RelativeLayout android:layout_height="70dp"
+            android:layout_width="match_parent"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="5dp"
+            android:paddingBottom="5dp"
+            android:gravity="center_vertical"
+
+            >
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:textSize="20dp"
+                android:text="Onkar Sarvade"
+
+                android:textColor="@android:color/black"
+                android:id="@+id/name"
+
+                android:focusable="false"
+                android:clickable="false"
+                />
+            <TextView
+                android:id="@+id/latest_message"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:maxLines="1"
+                android:text="Onkar this is new message"
+                android:layout_below="@+id/name"
+                android:textSize="15dp"
+
+                />
+            <TextView
+                android:id="@+id/time"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:maxLines="1"
+                android:text="2016-04-16 04:20:30"
+                android:layout_below="@+id/latest_message"
+                android:textSize="15dp"
+
+                />
+
+
+
+        </RelativeLayout>
+
+    </LinearLayout>
+</RelativeLayout>

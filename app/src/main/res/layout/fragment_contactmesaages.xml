@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:background="@android:color/white"
+    android:layout_marginTop="5dp"
+    >
+    <LinearLayout android:id="@+id/thumbnail"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+
+        android:elevation="1dp"
+
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="5dp"
+        >
+
+        <RelativeLayout android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:padding="5dp"
+
+            android:paddingBottom="5dp"
+            android:gravity="top"
+
+            >
+
+            <TextView
+                android:id="@+id/message"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+
+                android:text="Onkar this is new message"
+
+                android:textSize="15dp"
+
+                />
+            <TextView
+                android:id="@+id/time"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:maxLines="1"
+                android:text="2016-04-16 04:20:30"
+                android:layout_below="@+id/message"
+                android:textSize="15dp"
+
+                />
+
+
+
+        </RelativeLayout>
+
+    </LinearLayout>
+</RelativeLayout>

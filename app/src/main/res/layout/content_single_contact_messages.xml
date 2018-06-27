@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="com.example.osarvade.contactmessage.SingleContactMessages"
+    tools:showIn="@layout/activity_single_contact_messages"
+    android:orientation="vertical">
+
+    <FrameLayout
+        android:id="@+id/fragment"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1">
+
+    </FrameLayout>
+    <LinearLayout
+       android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:layout_marginTop="5dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <EditText
+            android:id="@+id/message"
+            android:padding="5dp"
+            android:scrollbars="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:background="@android:color/white"
+            android:elevation="2dp"
+            android:hint="Type Message"
+            android:textColor="@android:color/black"
+            />
+
+        <LinearLayout
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="5dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <Button
+
+                android:id="@+id/sim1"
+                android:text="SEND SMS"
+                android:textColor="@android:color/white"
+                android:background="#FF252D66"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"/>
+
+
+           <!-- <Button
+                android:enabled="false"
+                android:id="@+id/sim2"
+                android:layout_marginLeft="5dp"
+                android:text="SIM 2"
+                android:textColor="@android:color/white"
+                android:background="#FF252D66"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"/>-->
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+</LinearLayout>
